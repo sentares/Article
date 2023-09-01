@@ -1,5 +1,7 @@
 {
+  "include": ["**/*.ts", "**/*.tsx", ".eslintrc.js"],
   "compilerOptions": {
+    "strictNullChecks": true,
     "outDir": "./dist/",
     // Подсвечивает все места где не указан тип
     // Однако это не означает, что теперь вовсе нельзя использовать any.
