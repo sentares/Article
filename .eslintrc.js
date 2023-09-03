@@ -47,10 +47,9 @@ module.exports = {
     'n/handle-callback-err': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-
     // 'i18next/no-literal-string': ['error', { markupOnly: true }],
     'i18next/no-literal-string': 'off',
-    'max-len': ['off', { code: 180, ignoreComments: true }],
+    'max-len': ['warn', { ignoreComments: true, code: 100 }],
   },
   globals: {
     __IS_DEV__: true,
