@@ -1,5 +1,10 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", ".eslintrc.js"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.js",
+    "./config/jest/setUpTests.ts"
+  ],
   "compilerOptions": {
     "strictNullChecks": true,
     "outDir": "./dist/",
