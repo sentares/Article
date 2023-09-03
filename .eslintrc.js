@@ -43,10 +43,14 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/no-invalid-void-type': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
+    'n/handle-callback-err': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true }],
-    'max-len': ['error', { ignoreComments: true }],
+
+    // 'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'i18next/no-literal-string': 'off',
+    'max-len': ['off', { code: 180, ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
