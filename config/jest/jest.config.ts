@@ -9,7 +9,7 @@ export default {
   modulePaths: ['<rootDir>src'],
   testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
   rootDir: '../../',
-  setupFilesAfterEnv: ['./config/jest/setupTests.ts'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom', 'regenerator-runtime/runtime'],
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
