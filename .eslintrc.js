@@ -53,5 +53,12 @@ module.exports = {
         'i18next/no-literal-string': 'off',
       },
     },
+    {
+      files: ['./scripts/generate-visual-json-report.js'],
+      rules: {
+        'wrap-iife': 'off',
+        semi: 'on',
+      },
+    },
   ],
 }
