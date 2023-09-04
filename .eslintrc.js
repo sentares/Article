@@ -57,7 +57,7 @@ module.exports = {
       files: ['./scripts/generate-visual-json-report.js'],
       rules: {
         'wrap-iife': 'off',
-        semi: 'on',
+        'semi-style': 'off',
       },
     },
   ],
