@@ -1,7 +1,7 @@
 import path from 'path'
 
 export default {
-  global: {
+  globals: {
     __IS_DEV__: true,
   },
   clearMocks: true,
