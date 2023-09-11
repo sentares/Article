@@ -43,6 +43,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
+    // 'import/no-useless-path-segments': 'off',
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': [
       'warn',
@@ -53,6 +54,7 @@ module.exports = {
     ],
     'max-len': ['error', { ignoreComments: true, code: 180 }],
     'implicit-arrow-linebreak': 'off',
+    'spaced-comment': 'off',
   },
   globals: {
     __IS_DEV__: true,
