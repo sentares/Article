@@ -55,6 +55,8 @@ module.exports = {
     'max-len': ['error', { ignoreComments: true, code: 180 }],
     'implicit-arrow-linebreak': 'off',
     'spaced-comment': 'off',
+    quotes: 'off',
+    'no-unused-vars override': 'off',
   },
   globals: {
     __IS_DEV__: true,

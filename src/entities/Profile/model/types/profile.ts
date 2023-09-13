@@ -1,3 +1,4 @@
+//@ts-ignore
 import { Country, Currency } from 'shared/const/common'
 
 export interface Profile {
