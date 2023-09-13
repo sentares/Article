@@ -1,14 +1,14 @@
-import { classNames } from 'shared/lib/classNames/classNames'
+import { profileReducer } from 'entities/Profile'
 import { useTranslation } from 'react-i18next'
+import { classNames } from 'shared/lib/classNames/classNames'
 import {
   DynamicModuleLoader,
   ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
-// import { profileReducer } from 'entities/Profile'
 
-// const reducers: ReducersList = {
-//   profile: profileReducer,
-// }
+const reducers: ReducersList = {
+  profile: profileReducer,
+}
 
 interface ProfilePageProps {
   className?: string
@@ -18,10 +18,9 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
   const { t } = useTranslation()
 
   return (
-    <div>hello</div>
-    // <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-    //   <div className={classNames('', {}, [className])}>{t('PROFILE PAGE')}</div>
-    // </DynamicModuleLoader>
+    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+      <div className={classNames('', {}, [className])}>{t('PROFILE PAGE')}</div>
+    </DynamicModuleLoader>
   )
 }
 
